@@ -7,15 +7,50 @@
   <style>
     body {
       font-family: sans-serif;
-      max-width: 750px;
+      max-width: 900px;
       margin: 50px auto;
       padding: 0 20px;
       line-height: 1.6;
     }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
     nav a {
       margin-right: 15px;
       text-decoration: none;
       color: #666666;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    .content-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .content-block .text {
+      flex: 1 1 55%;
+    }
+
+    .content-block .image {
+      flex: 1 1 40%;
+    }
+
+    .content-block img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -23,7 +58,6 @@
 
   <nav>
     <a href="index.html">Start</a> |
-    
     <a href="repertoire.html">Repertoire</a> |
     <a href="preise.html">Preise</a> |
     <a href="kontakt.html">Kontakt</a>
@@ -31,33 +65,38 @@
 
   <h1>Repertoire</h1>
 
-  <p>Zu meinem Repertoire gehören unter anderem folgende Stücke:</p>
+  <div class="content-block">
+    <div class="text">
+      <p>Zu meinem Repertoire gehören unter anderem folgende Stücke:</p>
 
-  <ul>
-    <li>Bach: Violin Sonata No. 2 in A Minor, 3. Andante</li>
-    <li>Bach: Violin Sonata No. 2 in D Minor, 1. Allemanda</li>
-    <li>Bartok: Rumänische Volkstänze</li>
-    <li>Elgar: Salut d'amour</li>
-    <li>Franck: Violinsonate in A-Dur FWV 8, 1. Allegretto ben moderato</li>
-    <li>Franck: Violinsonate in A-Dur FWV 8, 2. Allegro</li>
-    <li>Kreisler: Liebesleid</li>
-    <li>Kreisler: Schön Rosmarin</li>
-    <li>Massenet: Thais-Meditation</li>
-    <li>Monti: Czardas</li>
-    <li>Mozart: Violinkonzert Nr. 3 in G-Dur K216, 3. Rondeau Allegro</li>
-    <li>Mozart: Violinsonate in E-Moll, K. 304</li>
-    <li>Rachmaninow: Vocalise Op. 34 Nr. 14</li>
-    <li>Ravel: Piece en forme de Habanera</li>
-    <li>Saint-Saens: Danse Macabre</li>
-    <li>Tschaikowsky: Souvenir d'un lieu cher, 3. Mélodie</li>
-    <li>Tschaikowsky: Violinkonzert in D-Dur: 2. Canzonetta</li>
-    <li>Vivaldi: Frühling, 1. Allegretto</li>
-    <li>Vivaldi: Violinkonzert Nr. 6 in A-Moll RV 356 (alle 3 Sätze)</li>
-    <li>Vivaldi: Winter, 1. Allegro Non Molto</li>
-  </ul>
+      <ul>
+        <li>Bach: Violin Sonata No. 2 in A Minor, 3. Andante</li>
+        <li>Bach: Violin Sonata No. 2 in D Minor, 1. Allemanda</li>
+        <li>Bartok: Rumänische Volkstänze</li>
+        <li>Elgar: Salut d'amour</li>
+        <li>Franck: Violinsonate in A-Dur FWV 8, 1. Allegretto ben moderato</li>
+        <li>Franck: Violinsonate in A-Dur FWV 8, 2. Allegro</li>
+        <li>Massenet: Thais-Meditation</li>
+        <li>Monti: Czardas</li>
+        <li>Mozart: Violinkonzert Nr. 3 in G-Dur K216, 3. Rondeau Allegro</li>
+        <li>Mozart: Violinsonate in E-Moll, K. 304</li>
+        <li>Rachmaninow: Vocalise Op. 34 Nr. 14</li>
+        <li>Ravel: Piece en forme de Habanera</li>
+        <li>Saint-Saens: Danse Macabre</li>
+        <li>Tschaikowsky: Souvenir d'un lieu cher, 3. Mélodie</li>
+        <li>Tschaikowsky: Violinkonzert in D-Dur: 2. Canzonetta</li>
+        <li>Vivaldi: Frühling, 1. Allegretto</li>
+        <li>Vivaldi: Violinkonzert Nr. 6 in A-Moll RV 356 (alle 3 Sätze)</li>
+        <li>Vivaldi: Winter, 1. Allegro Non Molto</li>
+      </ul>
 
-  <p>Falls Sie für einen Anlass ein spezifisches Stück wünschen, lassen Sie es mich wissen – ich studiere es sehr gerne ein :-).</p>
-<img src="fotorepertoire.jpg" alt="Repertoire-Bild" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+      <p>Falls Sie für einen Anlass ein spezifisches Stück wünschen, lassen Sie es mich wissen – ich studiere es sehr gerne ein.</p>
+    </div>
+
+    <div class="image">
+      <img src="fotorepertoire.jpg" alt="Repertoirebild">
+    </div>
+  </div>
 
 </body>
 </html>
