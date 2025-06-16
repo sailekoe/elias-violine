@@ -7,15 +7,46 @@
   <style>
     body {
       font-family: sans-serif;
-      max-width: 750px;
+      max-width: 900px;
       margin: 50px auto;
       padding: 0 20px;
       line-height: 1.6;
     }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
     nav a {
       margin-right: 15px;
       text-decoration: none;
       color: #666666;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    .content-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .content-block .text {
+      flex: 1 1 55%;
+    }
+
+    .content-block .image {
+      flex: 1 1 40%;
+    }
+
+    .content-block img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -28,12 +59,17 @@
     <a href="kontakt.html">Kontakt</a>
   </nav>
 
-  <h1>Kontakt</h1>
+  <div class="content-block">
+    <div class="text">
+      <h1>Kontakt</h1>
+      <p>Ich freue mich auf Ihre unverbindliche Anfrage per Mail an  
+      <a href="mailto:elias.koeppel@hotmail.com">elias.koeppel@hotmail.com</a>.</p>
+    </div>
 
-  <p>Ich freue mich auf Ihre unverbindliche Anfrage per Mail an  
-    <a href="mailto:elias.koeppel@hotmail.com">elias.koeppel@hotmail.com</a>. </p>
-
-  <img src="fotokontakt.jpg" alt="Kontaktbild" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+    <div class="image">
+      <img src="fotokontakt.jpg" alt="Kontaktbild">
+    </div>
+  </div>
 
 </body>
 </html>
